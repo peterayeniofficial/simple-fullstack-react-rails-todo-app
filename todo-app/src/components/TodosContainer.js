@@ -72,9 +72,9 @@ class TodosContainer extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({todos}) => {
   return {
-    todos: state.todos
+    todos
   }
 }
 

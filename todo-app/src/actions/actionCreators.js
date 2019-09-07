@@ -3,9 +3,9 @@ import {
     ADD_TODO, 
     TOGGLE_TODO, 
     DELETE_TODO 
-} from '../actions/actionTypes'
+} from './actionTypes'
 
-export function LOAD_TODOS(todos) {
+export function loadTodos(todos) {
     return {
         type: LOAD_TODOS,
         todos
@@ -13,7 +13,7 @@ export function LOAD_TODOS(todos) {
     }
 }
 
-export function ADD_TODO(id, title) {
+export function addTodo(id, title) {
     return {
         type: ADD_TODO,
         id,
@@ -21,17 +21,17 @@ export function ADD_TODO(id, title) {
     }
 }
 
-export function TOGGLE_TODO(index) {
+export function toggleTodo(id) {
     return {
         type: TOGGLE_TODO,
-        index 
+        id
     }
 }
 
-export function DELETE_TODO(index) {
+export function deleteTodo(id) {
     return {
         type: DELETE_TODO,
-        index
+        id
     }
 }
 
